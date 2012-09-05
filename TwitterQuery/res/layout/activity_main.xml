@@ -358,11 +358,12 @@
 
         <TextView
             android:id="@+id/blank"
-	        android:layout_width="0dip"
-	        android:layout_height="wrap_content"
-	        android:text=""
-	        android:layout_weight="1"
-	        tools:context=".MainActivity" />
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            tools:context=".MainActivity" />
+
         <Button
             android:id="@+id/search_Next"
 	        android:layout_width="wrap_content"

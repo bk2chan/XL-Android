@@ -46,6 +46,8 @@ public class MainActivity extends Activity {
 	TextView tweet5;
 	TextView tweet6;
 	
+	TextView pageText;
+	
 	ImageView profilePicture1;
 	ImageView profilePicture2;
 	ImageView profilePicture3;
@@ -95,6 +97,8 @@ public class MainActivity extends Activity {
         tweet4 = (TextView) this.findViewById(R.id.result_Tweet_Message_4);
         tweet5 = (TextView) this.findViewById(R.id.result_Tweet_Message_5);
         tweet6 = (TextView) this.findViewById(R.id.result_Tweet_Message_6);
+        
+        pageText = (TextView) this.findViewById((R.id.blank));
         
         profilePicture1 = (ImageView) this.findViewById(R.id.result_Pic_1);
         profilePicture2 = (ImageView) this.findViewById(R.id.result_Pic_2);
@@ -200,8 +204,8 @@ public class MainActivity extends Activity {
     		
     		isLoading = true;
     		prevButton.setEnabled(false);
-    		nextButton.setEnabled(true);
-    		
+    		nextButton.setEnabled(false);
+    		loadButton.setEnabled(false);
     	}
     }
     
@@ -209,10 +213,6 @@ public class MainActivity extends Activity {
     	if(!isLoading) {
     		if(pageNumber > 1) {
     			pageNumber--;
-    			
-    			if(pageNumber == 1) {
-    				prevButton.setEnabled(false);
-    			}
     			
     			String searchParam = "bieber";
         		
@@ -225,9 +225,16 @@ public class MainActivity extends Activity {
     			isLoading = true;
     			
     			new TwitterThread().execute(options);
+    			
+    			prevButton.setEnabled(false);
+        		nextButton.setEnabled(false);
+        		loadButton.setEnabled(false);
+    			
     		}
     	} else {
     		prevButton.setEnabled(false);
+    		nextButton.setEnabled(false);
+    		loadButton.setEnabled(false);
     	}
     }
     
@@ -246,7 +253,9 @@ public class MainActivity extends Activity {
     		new TwitterThread().execute(options);
     		
     		isLoading = true;
-    		prevButton.setEnabled(true);
+    		prevButton.setEnabled(false);
+    		nextButton.setEnabled(false);
+    		loadButton.setEnabled(false);
     	}
     }
     
@@ -338,6 +347,16 @@ public class MainActivity extends Activity {
     		expandedLayout4 = false;
     		expandedLayout5 = false;
     		expandedLayout6 = false;
+    		
+    		if(pageNumber > 1) {
+    			prevButton.setEnabled(true);
+    		} else {
+    			prevButton.setEnabled(false);
+    		}
+    		nextButton.setEnabled(true);
+    		loadButton.setEnabled(true);
+    		
+    		//pageText.setText("Page: " + String.valueOf(pageNumber));
     		
     		return;
     	}
