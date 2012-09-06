@@ -27,349 +27,359 @@
     </LinearLayout>
     
     <!-- Search Results -->
-
-    <LinearLayout
-        android:id="@+id/result_Layout_1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:visibility="invisible"
-        android:onClick="ClickResultLayout1" >
-
-        <ImageView
-            android:id="@+id/result_Pic_1"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="6dip"
-            android:contentDescription="@string/tweet_Pic"
-            android:maxHeight="48dip"
-            android:maxWidth="48dip"
-            android:minHeight="48dip"
-            android:minWidth="48dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
-	
-	    <LinearLayout
+	<ScrollView 
+	    android:layout_width="fill_parent" android:layout_height="fill_parent"
+	    >
+	    <LinearLayout 
 	        android:orientation="vertical"
-	    	android:id="@+id/result_Tweet_1"
-	        android:layout_width="0dip"
-	        android:layout_weight="1"
-	        android:layout_height="fill_parent">
-	
-	        <TextView
-	            android:id="@+id/result_Tweet_User_1"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:gravity="center_vertical"
-	            android:text="@string/tweet_Name_Holder"
-	            android:textSize="15dip" />
-	            
-	        <TextView
-	            android:id="@+id/result_Tweet_Message_1"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:ellipsize="marquee"
-	            android:lines="2"
-	            android:singleLine="false"
-	            android:text="@string/tweet_Holder"
-	            android:textSize="10dip" />
-	            
+        	android:layout_height="wrap_content" android:layout_width="wrap_content"
+	        >
+	        	<LinearLayout
+			        android:id="@+id/result_Layout_1"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:orientation="horizontal"
+			        android:visibility="invisible"
+			        android:onClick="ClickResultLayout1" >
+			
+			        <ImageView
+			            android:id="@+id/result_Pic_1"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginRight="6dip"
+			            android:contentDescription="@string/tweet_Pic"
+			            android:maxHeight="60dip"
+			            android:maxWidth="60dip"
+			            android:minHeight="60dip"
+			            android:minWidth="60dip"
+			            android:scaleType="fitCenter"
+			            android:src="@drawable/ic_launcher" />
+				
+				    <LinearLayout
+				        android:orientation="vertical"
+				    	android:id="@+id/result_Tweet_1"
+				        android:layout_width="0dip"
+				        android:layout_weight="1"
+				        android:layout_height="fill_parent">
+				
+				        <TextView
+				            android:id="@+id/result_Tweet_User_1"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:gravity="center_vertical"
+				            android:text="@string/tweet_Name_Holder"
+				            android:textSize="15dip" />
+				            
+				        <TextView
+				            android:id="@+id/result_Tweet_Message_1"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:lines="4"
+				            android:singleLine="false"
+				            android:text="@string/tweet_Holder"
+				            android:textSize="10dip" />
+				            
+				    </LinearLayout>
+				       
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/result_Layout_2"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:orientation="horizontal"
+			        android:paddingTop="10dip"
+			        android:visibility="invisible" 
+			        android:onClick="ClickResultLayout2">
+			
+			        <ImageView
+			            android:id="@+id/result_Pic_2"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginRight="6dip"
+			            android:contentDescription="@string/tweet_Pic"
+			            android:maxHeight="60dip"
+			            android:maxWidth="60dip"
+			            android:minHeight="60dip"
+			            android:minWidth="60dip"
+			            android:scaleType="fitCenter"
+			            android:src="@drawable/ic_launcher" />
+				
+				    <LinearLayout
+				        android:orientation="vertical"
+				    	android:id="@+id/result_Tweet_2"
+				        android:layout_width="0dip"
+				        android:layout_weight="1"
+				        android:layout_height="fill_parent">
+				
+				        <TextView
+				            android:id="@+id/result_Tweet_User_2"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:gravity="center_vertical"
+				            android:text="@string/tweet_Name_Holder"
+				            android:textSize="15dip" />
+				            
+				        <TextView
+				            android:id="@+id/result_Tweet_Message_2"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:maxLines="4"
+				            android:singleLine="false"
+				            android:text="@string/tweet_Holder"
+				            android:textSize="10dip" />
+				            
+				    </LinearLayout>
+				       
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/result_Layout_3"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:orientation="horizontal"
+			        android:paddingTop="10dip"
+			        android:visibility="invisible" 
+			        android:onClick="ClickResultLayout3">
+			
+			        <ImageView
+			            android:id="@+id/result_Pic_3"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginRight="6dip"
+			            android:contentDescription="@string/tweet_Pic"
+			            android:maxHeight="60dip"
+			            android:maxWidth="60dip"
+			            android:minHeight="60dip"
+			            android:minWidth="60dip"
+			            android:scaleType="fitCenter"
+			            android:src="@drawable/ic_launcher" />
+				
+				    <LinearLayout
+				        android:orientation="vertical"
+				    	android:id="@+id/result_Tweet_3"
+				        android:layout_width="0dip"
+				        android:layout_weight="1"
+				        android:layout_height="fill_parent">
+				
+				        <TextView
+				            android:id="@+id/result_Tweet_User_3"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:gravity="center_vertical"
+				            android:text="@string/tweet_Name_Holder"
+				            android:textSize="15dip" />
+				            
+				        <TextView
+				            android:id="@+id/result_Tweet_Message_3"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:maxLines="4"
+				            android:singleLine="false"
+				            android:text="@string/tweet_Holder"
+				            android:textSize="10dip" />
+				            
+				    </LinearLayout>
+				       
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/result_Layout_4"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:orientation="horizontal"
+			        android:paddingTop="10dip"
+			        android:visibility="invisible" 
+			        android:onClick="ClickResultLayout4">
+			
+			        <ImageView
+			            android:id="@+id/result_Pic_4"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginRight="6dip"
+			            android:contentDescription="@string/tweet_Pic"
+			            android:maxHeight="60dip"
+			            android:maxWidth="60dip"
+			            android:minHeight="60dip"
+			            android:minWidth="60dip"
+			            android:scaleType="fitCenter"
+			            android:src="@drawable/ic_launcher" />
+				
+				    <LinearLayout
+				        android:orientation="vertical"
+				    	android:id="@+id/result_Tweet_4"
+				        android:layout_width="0dip"
+				        android:layout_weight="1"
+				        android:layout_height="fill_parent">
+				
+				        <TextView
+				            android:id="@+id/result_Tweet_User_4"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:gravity="center_vertical"
+				            android:text="@string/tweet_Name_Holder"
+				            android:textSize="15dip" />
+				            
+				        <TextView
+				            android:id="@+id/result_Tweet_Message_4"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:maxLines="4"
+				            android:singleLine="false"
+				            android:text="@string/tweet_Holder"
+				            android:textSize="10dip" />
+				            
+				    </LinearLayout>
+				       
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/result_Layout_5"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:orientation="horizontal"
+			        android:paddingTop="10dip"
+			        android:visibility="invisible" 
+			        android:onClick="ClickResultLayout5">
+			
+			        <ImageView
+			            android:id="@+id/result_Pic_5"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginRight="6dip"
+			            android:contentDescription="@string/tweet_Pic"
+			            android:maxHeight="60dip"
+			            android:maxWidth="60dip"
+			            android:minHeight="60dip"
+			            android:minWidth="60dip"
+			            android:scaleType="fitCenter"
+			            android:src="@drawable/ic_launcher" />
+				
+				    <LinearLayout
+				        android:orientation="vertical"
+				     	android:id="@+id/result_Tweet_5"
+				        android:layout_width="0dip"
+				        android:layout_weight="1"
+				        android:layout_height="fill_parent">
+				
+				        <TextView
+				            android:id="@+id/result_Tweet_User_5"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:gravity="center_vertical"
+				            android:text="@string/tweet_Name_Holder"
+				            android:textSize="15dip" />
+				            
+				        <TextView
+				            android:id="@+id/result_Tweet_Message_5"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:maxLines="4"
+				            android:singleLine="false"
+				            android:text="@string/tweet_Holder"
+				            android:textSize="10dip" />
+				            
+				    </LinearLayout>
+				       
+			    </LinearLayout>
+			    
+			    <LinearLayout
+			        android:id="@+id/result_Layout_6"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:clickable="true"
+			        android:orientation="horizontal"
+			        android:paddingTop="10dip"
+			        android:visibility="invisible" 
+			        android:onClick="ClickResultLayout6">
+			
+			        <ImageView
+			            android:id="@+id/result_Pic_6"
+			            android:layout_width="wrap_content"
+			            android:layout_height="fill_parent"
+			            android:layout_marginRight="6dip"
+			            android:contentDescription="@string/tweet_Pic"
+			            android:maxHeight="60dip"
+			            android:maxWidth="60dip"
+			            android:minHeight="60dip"
+			            android:minWidth="60dip"
+			            android:scaleType="fitCenter"
+			            android:src="@drawable/ic_launcher" />
+				
+				    <LinearLayout
+				        android:orientation="vertical"
+				     	android:id="@+id/result_Tweet_6"
+				        android:layout_width="0dip"
+				        android:layout_weight="1"
+				        android:layout_height="fill_parent">
+				
+				        <TextView
+				            android:id="@+id/result_Tweet_User_6"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:gravity="center_vertical"
+				            android:text="@string/tweet_Name_Holder"
+				            android:textSize="15dip" />
+				            
+				        <TextView
+				            android:id="@+id/result_Tweet_Message_6"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:ellipsize="marquee"
+				            android:maxLines="4"
+				            android:singleLine="false"
+				            android:text="@string/tweet_Holder"
+				            android:textSize="10dip" />
+				            
+				    </LinearLayout>
+				       
+			    </LinearLayout>
+			    
+			    <!-- Next and Previous Pages -->
+
+			    <LinearLayout
+			        android:id="@+id/extra_Layout"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:orientation="horizontal"
+			        android:paddingTop="20dip" 
+			        android:visibility="invisible" >
+					
+			        <Button
+			            android:id="@+id/search_Prev"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:onClick="prevTweet"
+			            android:text="@string/button_prev" />
+			
+			        <TextView
+			            android:id="@+id/blank"
+			            android:layout_width="0dip"
+			            android:layout_height="wrap_content"
+			            android:layout_weight="1"
+			            android:text=""
+			            tools:context=".MainActivity" />
+			
+			        <Button
+			            android:id="@+id/search_Next"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:text="@string/button_next"
+				        android:onClick="nextTweet" />
+			    </LinearLayout>
 	    </LinearLayout>
-	       
-    </LinearLayout>
+	</ScrollView>
     
-    <LinearLayout
-        android:id="@+id/result_Layout_2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:paddingTop="10dip"
-        android:visibility="invisible" 
-        android:onClick="ClickResultLayout2">
-
-        <ImageView
-            android:id="@+id/result_Pic_2"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="6dip"
-            android:contentDescription="@string/tweet_Pic"
-            android:maxHeight="48dip"
-            android:maxWidth="48dip"
-            android:minHeight="48dip"
-            android:minWidth="48dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
-	
-	    <LinearLayout
-	        android:orientation="vertical"
-	    	android:id="@+id/result_Tweet_2"
-	        android:layout_width="0dip"
-	        android:layout_weight="1"
-	        android:layout_height="fill_parent">
-	
-	        <TextView
-	            android:id="@+id/result_Tweet_User_2"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:gravity="center_vertical"
-	            android:text="@string/tweet_Name_Holder"
-	            android:textSize="15dip" />
-	            
-	        <TextView
-	            android:id="@+id/result_Tweet_Message_2"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:ellipsize="marquee"
-	            android:maxLines="2"
-	            android:singleLine="false"
-	            android:text="@string/tweet_Holder"
-	            android:textSize="10dip" />
-	            
-	    </LinearLayout>
-	       
-    </LinearLayout>
     
-    <LinearLayout
-        android:id="@+id/result_Layout_3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:paddingTop="10dip"
-        android:visibility="invisible" 
-        android:onClick="ClickResultLayout3">
-
-        <ImageView
-            android:id="@+id/result_Pic_3"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="6dip"
-            android:contentDescription="@string/tweet_Pic"
-            android:maxHeight="48dip"
-            android:maxWidth="48dip"
-            android:minHeight="48dip"
-            android:minWidth="48dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
-	
-	    <LinearLayout
-	        android:orientation="vertical"
-	    	android:id="@+id/result_Tweet_3"
-	        android:layout_width="0dip"
-	        android:layout_weight="1"
-	        android:layout_height="fill_parent">
-	
-	        <TextView
-	            android:id="@+id/result_Tweet_User_3"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:gravity="center_vertical"
-	            android:text="@string/tweet_Name_Holder"
-	            android:textSize="15dip" />
-	            
-	        <TextView
-	            android:id="@+id/result_Tweet_Message_3"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:ellipsize="marquee"
-	            android:maxLines="2"
-	            android:singleLine="false"
-	            android:text="@string/tweet_Holder"
-	            android:textSize="10dip" />
-	            
-	    </LinearLayout>
-	       
-    </LinearLayout>
-    
-    <LinearLayout
-        android:id="@+id/result_Layout_4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:paddingTop="10dip"
-        android:visibility="invisible" 
-        android:onClick="ClickResultLayout4">
-
-        <ImageView
-            android:id="@+id/result_Pic_4"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="6dip"
-            android:contentDescription="@string/tweet_Pic"
-            android:maxHeight="48dip"
-            android:maxWidth="48dip"
-            android:minHeight="48dip"
-            android:minWidth="48dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
-	
-	    <LinearLayout
-	        android:orientation="vertical"
-	    	android:id="@+id/result_Tweet_4"
-	        android:layout_width="0dip"
-	        android:layout_weight="1"
-	        android:layout_height="fill_parent">
-	
-	        <TextView
-	            android:id="@+id/result_Tweet_User_4"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:gravity="center_vertical"
-	            android:text="@string/tweet_Name_Holder"
-	            android:textSize="15dip" />
-	            
-	        <TextView
-	            android:id="@+id/result_Tweet_Message_4"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:ellipsize="marquee"
-	            android:maxLines="2"
-	            android:singleLine="false"
-	            android:text="@string/tweet_Holder"
-	            android:textSize="10dip" />
-	            
-	    </LinearLayout>
-	       
-    </LinearLayout>
-    
-    <LinearLayout
-        android:id="@+id/result_Layout_5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:paddingTop="10dip"
-        android:visibility="invisible" 
-        android:onClick="ClickResultLayout5">
-
-        <ImageView
-            android:id="@+id/result_Pic_5"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="6dip"
-            android:contentDescription="@string/tweet_Pic"
-            android:maxHeight="48dip"
-            android:maxWidth="48dip"
-            android:minHeight="48dip"
-            android:minWidth="48dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
-	
-	    <LinearLayout
-	        android:orientation="vertical"
-	     	android:id="@+id/result_Tweet_5"
-	        android:layout_width="0dip"
-	        android:layout_weight="1"
-	        android:layout_height="fill_parent">
-	
-	        <TextView
-	            android:id="@+id/result_Tweet_User_5"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:gravity="center_vertical"
-	            android:text="@string/tweet_Name_Holder"
-	            android:textSize="15dip" />
-	            
-	        <TextView
-	            android:id="@+id/result_Tweet_Message_5"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:ellipsize="marquee"
-	            android:maxLines="2"
-	            android:singleLine="false"
-	            android:text="@string/tweet_Holder"
-	            android:textSize="10dip" />
-	            
-	    </LinearLayout>
-	       
-    </LinearLayout>
-    
-    <LinearLayout
-        android:id="@+id/result_Layout_6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        android:orientation="horizontal"
-        android:paddingTop="10dip"
-        android:visibility="invisible" 
-        android:onClick="ClickResultLayout6">
-
-        <ImageView
-            android:id="@+id/result_Pic_6"
-            android:layout_width="wrap_content"
-            android:layout_height="fill_parent"
-            android:layout_marginRight="6dip"
-            android:contentDescription="@string/tweet_Pic"
-            android:maxHeight="48dip"
-            android:maxWidth="48dip"
-            android:minHeight="48dip"
-            android:minWidth="48dip"
-            android:scaleType="fitCenter"
-            android:src="@drawable/ic_launcher" />
-	
-	    <LinearLayout
-	        android:orientation="vertical"
-	     	android:id="@+id/result_Tweet_6"
-	        android:layout_width="0dip"
-	        android:layout_weight="1"
-	        android:layout_height="fill_parent">
-	
-	        <TextView
-	            android:id="@+id/result_Tweet_User_6"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:gravity="center_vertical"
-	            android:text="@string/tweet_Name_Holder"
-	            android:textSize="15dip" />
-	            
-	        <TextView
-	            android:id="@+id/result_Tweet_Message_6"
-	            android:layout_width="fill_parent"
-	            android:layout_height="wrap_content"
-	            android:ellipsize="marquee"
-	            android:maxLines="2"
-	            android:singleLine="false"
-	            android:text="@string/tweet_Holder"
-	            android:textSize="10dip" />
-	            
-	    </LinearLayout>
-	       
-    </LinearLayout>
-    
-    <!-- Next and Previous Pages -->
-
-    <LinearLayout
-        android:id="@+id/extra_Layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingTop="20dip" 
-        android:visibility="invisible" >
-		
-        <Button
-            android:id="@+id/search_Prev"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="prevTweet"
-            android:text="@string/button_prev" />
-
-        <TextView
-            android:id="@+id/blank"
-            android:layout_width="0dip"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text=""
-            tools:context=".MainActivity" />
-
-        <Button
-            android:id="@+id/search_Next"
-	        android:layout_width="wrap_content"
-	        android:layout_height="wrap_content"
-	        android:text="@string/button_next"
-	        android:onClick="nextTweet" />
-    </LinearLayout>
     
 </LinearLayout>

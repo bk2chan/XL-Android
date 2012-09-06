@@ -135,7 +135,7 @@ public class MainActivity extends Activity {
     	if(!isLoading) 
     		expandedLayout1 = !expandedLayout1;
     	if(expandedLayout1) {
-    		tweet1.setMaxLines(5);
+    		tweet1.setMaxLines(4);
     	} else {
     		tweet1.setMaxLines(2);
     	}
@@ -144,7 +144,7 @@ public class MainActivity extends Activity {
 		if(!isLoading)
 			expandedLayout2 = !expandedLayout2;
 		if(expandedLayout2) {
-    		tweet2.setMaxLines(5);
+    		tweet2.setMaxLines(4);
     	} else {
     		tweet2.setMaxLines(2);
     	}
@@ -153,7 +153,7 @@ public class MainActivity extends Activity {
 		if(!isLoading)
 			expandedLayout3 = !expandedLayout3;
 		if(expandedLayout3) {
-    		tweet3.setMaxLines(5);
+    		tweet3.setMaxLines(4);
     	} else {
     		tweet3.setMaxLines(2);
     	}
@@ -162,7 +162,7 @@ public class MainActivity extends Activity {
 		if(!isLoading)
 			expandedLayout4 = !expandedLayout4;
 		if(expandedLayout4) {
-    		tweet4.setMaxLines(5);
+    		tweet4.setMaxLines(4);
     	} else {
     		tweet4.setMaxLines(2);
     	}
@@ -171,7 +171,7 @@ public class MainActivity extends Activity {
 		if(!isLoading)
 			expandedLayout5 = !expandedLayout5;
 		if(expandedLayout5) {
-    		tweet5.setMaxLines(5);
+    		tweet5.setMaxLines(4);
     	} else {
     		tweet5.setMaxLines(2);
     	}
@@ -180,10 +180,19 @@ public class MainActivity extends Activity {
 		if(!isLoading)
 			expandedLayout6 = !expandedLayout6;
 		if(expandedLayout6) {
-    		tweet6.setMaxLines(5);
+    		tweet6.setMaxLines(4);
     	} else {
     		tweet6.setMaxLines(2);
     	}
+	}
+	
+	public void resetTweetTextSize() {
+		tweet1.setMaxLines(2);
+		tweet2.setMaxLines(2);
+		tweet3.setMaxLines(2);
+		tweet4.setMaxLines(2);
+		tweet5.setMaxLines(2);
+		tweet6.setMaxLines(2);
 	}
     
     public void loadTweet(View view) {
@@ -206,6 +215,8 @@ public class MainActivity extends Activity {
     		prevButton.setEnabled(false);
     		nextButton.setEnabled(false);
     		loadButton.setEnabled(false);
+    		
+    		resetTweetTextSize();
     	}
     }
     
@@ -229,12 +240,14 @@ public class MainActivity extends Activity {
     			prevButton.setEnabled(false);
         		nextButton.setEnabled(false);
         		loadButton.setEnabled(false);
+        		resetTweetTextSize();
     			
     		}
     	} else {
     		prevButton.setEnabled(false);
     		nextButton.setEnabled(false);
     		loadButton.setEnabled(false);
+    		resetTweetTextSize();
     	}
     }
     
@@ -256,6 +269,7 @@ public class MainActivity extends Activity {
     		prevButton.setEnabled(false);
     		nextButton.setEnabled(false);
     		loadButton.setEnabled(false);
+    		resetTweetTextSize();
     	}
     }
     
